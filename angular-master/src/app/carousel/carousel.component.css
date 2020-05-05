@@ -1,0 +1,265 @@
+ngb-carousel {
+    max-width: 1220px;
+    margin: 50px auto;
+   z-index: 1;
+      -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 12%;
+    left: 50%;
+}
+/*#container{
+  -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: -50%;
+    left: 50%;
+
+}*/
+
+/*#carousel{
+    position:relative;
+    top:50%;
+}*/
+ngb-carousel img {
+    width: 100%;
+    outline: none;
+}
+
+ngb-carousel {
+    width: 2500px;
+    height: inherit;
+}
+#response{
+    position: relative;
+    left: 10%;
+    top:30%;
+    color:purple;
+}
+.carousel-inner {
+    overflow: visible;
+    
+    
+
+}
+
+.carousel-item {
+    display: flex !important;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1.2s ease-in-out, visibility 1.2s;
+    z-index: -1;
+}
+
+.carousel-item.active{
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+.carousel-control-prev {
+     z-index: 20;
+}
+
+
+.carousel-control-next {
+     z-index: 20;
+}
+
+.carousel-indicators{
+    z-index: 20;
+}
+
+
+
+
+/*.home_search{
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  position: absolute;
+  top:-30%;
+  left: 50%;
+  z-index: 20;
+}*/
+
+.home
+{
+	width: 100%;
+	height:100vh;
+	max-height: 892px;
+}
+.home_slider_container
+{
+	width: 100%;
+	height: 100%;
+}
+.home_slider_background
+{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.slide_container
+{
+	width: 100%;
+	top: 42%;
+}
+.slide_content
+{
+	max-width: 600px;
+}
+.home_subtitle
+{
+	font-size: 14px;
+	font-weight: 700;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	line-height: 0.75;
+}
+.home_title
+{
+	font-size: 60px;
+	font-weight: 600;
+	color: #FFFFFF;
+	line-height: 1.2;
+	margin-top: 11px;
+}
+.home_price
+{
+	font-size: 30px;
+	font-weight: 700;
+	color: #FFFFFF;
+	margin-top: 19px;
+}
+.home_details
+{
+	display: inline-block;
+	background: linear-gradient(to right, #487fee, #32fa95);
+	border-radius: 16px;
+	padding-top: 3px;
+	margin-top: 8px;
+}
+.home_details_list
+{
+	height: 32px;
+	padding-left: 26px;
+	padding-right: 44px;
+}
+.home_details_list li
+{
+	display: inline-block;
+}
+.home_details_list li:not(:last-child)
+{
+	margin-right: 30px;
+}
+.home_details_image
+{
+	display: inline-block;
+	width: 23px;
+	height: 14px;
+	margin-right: 4px;
+}
+.home_details_image img
+{
+	max-width: 100%;
+}
+.home_details_list li span
+{
+	display: inline-block;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+/*********************************
+6. Home Search
+*********************************/
+
+.home_search
+{
+	width: 100%;
+  z-index: 100;
+  /*position: absolute;
+  top:200px;*/
+  /*left: -50%;*/
+
+}
+.home_search_container
+{z-index: 100;
+	position: absolute;
+	top: -700px;
+	left: 15px;
+	width: calc(100% - 30px);
+	height: 100px;
+	border-radius: 45px;
+	padding: 10px;
+	background: rgba(255,255,255,0.33);
+}
+.home_search_content
+{
+	width: 100%;
+	height: 100%;
+	background: #FFFFFF;
+	border-radius: 35px;
+}
+.search_form
+{
+	position: relative;
+	height: 100%;
+}
+.search_form_content
+{
+	width: 100%;
+	height: 100%;
+	padding-left: 14px;
+	padding-right: 11px;
+}
+.search_form_content > div
+{
+	width: 20%;
+	height: 100%;
+	padding-left: 18px;
+	padding-right: 2px;
+}
+.search_form_content > div:not(:last-child)
+{
+	border-right: solid 2px #d1d1d1;
+}
+.search_form_select
+{
+	display: block;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 100%;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    -webkit-user-select: none;
+    background-position: center right;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b6b6b;
+    cursor: pointer;
+}
+
+.btn{
+	position: relative;
+	top: 25%;
+}
